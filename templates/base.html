@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CosmoKiD</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
     <script src="{{ url_for('static', filename='js/scripts.js') }}" defer></script>
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav>
         <ul>
+            <!-- Home -->
             <li id="home-button" class="{% if request.path != '/' %}visible{% endif %}">
                 <a href="{{ url_for('index') }}">
                     <img src="{{ url_for('static', filename='images/logo2.png') }}" alt="Home Logo" id="home-logo">
                 </a>
             </li>
-            <li><a href="{{ url_for('solar_system') }}">Solar System</a></li>
-            <li><a href="{{ url_for('milky_way') }}">Milky Way</a></li>
-            <li><a href="{{ url_for('eclipses') }}">Eclipses</a></li>
+            <!-- Links -->
+            <li><a href="{{ url_for('astronomy_vs_astrology') }}">Astronomy vs Astrology</a></li>
+            <li><a href="{{ url_for('solar_system') }}">Our Solar System & Milky Way</a></li>
+            <li><a href="{{ url_for('light') }}">Light, Colors & Why is sky blue</a></li>
+            <li><a href="{{ url_for('star_dust') }}">Origin of elements</a></li>
+            <li><a href="{{ url_for('apod') }}">Picture of the day</a></li>
         </ul>
     </nav>
+    <!-- Main Content -->
     <main>
         {% block content %}{% endblock %}
     </main>

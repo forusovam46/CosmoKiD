@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Light -->
+<h1>Light, Colors & Why is sky blue?</h1>
+<div class="two-column-layout">
+    <div class="column">
+        <!-- Understanding Colors -->
+        <h2>Understanding Light and its Colors</h2>
+        <p>Colors are the result of the way our eyes perceive different wavelengths of light. Light is made up of many colors, each with a different wavelength. <span class="color-reddish">Red light</span> has the longest wavelength, while <span class="color-pinkish">violet</span> has the shortest. When all the colors of light are combined, they produce white light, like the light from the sun.</p>
+        
+        <!-- Importance of Light in Astronomy -->
+        <h2>What is Light and Why is it Important in Astronomy?</h2>
+        <p><span class="color-bluish">Visible light</span> is a form of electromagnetic radiation that is visible to the human eye. It is only a small part of the electromagnetic spectrum, which includes other types of radiation such as radio waves, microwaves, infrared, ultraviolet, X-rays, and gamma rays. In astronomy, light is crucial because it carries information about distant objects in the universe. By studying light, astronomers can learn about the composition, temperature, distance, and motion of celestial objects.</p>
+        
+        <p>Its visible part ranges from approximately 400 nanometers (violet) to 700 nanometers (red). However, astronomers study all parts of the electromagnetic spectrum to gain a complete understanding of the universe. For example, radio waves can reveal the structure of galaxies, while X-rays can show high-energy processes like supernova explosions.</p>
+
+        <!-- Rayleigh Scattering -->
+        <h2>Why is the Sky Blue?</h2>
+        <p>The sky appears blue due to the scattering of sunlight by the atmosphere. This phenomenon is known as <span class="color-greenish">Rayleigh scattering</span>. When sunlight enters the Earth's atmosphere, it collides with molecules and small particles in the air. Because blue light waves are shorter and smaller than other colors, they are scattered in all directions by the gases and particles in the atmosphere. This scattering causes the sky to look blue from our perspective.</p>
+        
+        <!-- Spectroscopy and Photometry -->
+        <h2>Spectroscopy and Photometry</h2>
+        <p><span class="color-yellowish">Spectroscop</span>y is the study of how light interacts with matter. By analyzing the spectrum of light from a star or galaxy, astronomers can determine its composition, temperature, density, mass, distance, luminosity, and relative motion. <span class="color-yellowish">Photometry</span> is the measurement of the intensity or brightness of light. It helps astronomers understand the variability and behavior of celestial objects over time.</p>
+    </div>
+    
+    <div class="column black-background">
+        <h2>The full spectrum of light</h2>
+        <!-- Electromagnetic Spectrum Image -->
+        <img src="{{ url_for('static', filename='images/electromagnetic-spectrum.png') }}" alt="Electromagnetic Spectrum" class="image" style="margin-bottom: 30px;">
+        <!-- Light Dispersion Video 3Blue1Brown -->
+        <h2>Light Dispersion through a Prism</h2>
+        <p class="note">Prism unvales the the colors of light. If you want to dive deeper into what happens in a prism, watch the full <a href="https://youtu.be/KTzGBJPuJwM?si=-5tHgY2a7rzeNCL5" target="_blank"></a>video</a> from this great educational content creator, 3Blue1Brown.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KTzGBJPuJwM?si=azVbMDLyrvUdgldd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Astronomy vs Astrology{% endblock %}
+
+{% block content %}
+<!-- Astronomy vs Astrology Section -->
+<h1>Astronomy vs Astrology</h1>
+<div class="two-column-layout">
+    <div class="column">
+        <!-- Astronomy -->
+        <h2 class="color-pinkish">Astronomy</h2>
+        <img src="{{ url_for('static', filename='images/Astronomy.svg') }}" alt="Astronomy" class="image-medium">
+        <p>Astronomy is the <span class="color-pinkish">scientific study of celestial objects, space, and the universe</span> as a whole. Astronomers use research and observation, following the principles of physics and mathematics, to understand how the universe works. This includes studying how planets, stars, and galaxies form and evolve, including objects like black holes. Cosmology focuses on the origin and evolution of the universe itself.</p>        
+        <h2>Exploring the Cosmos Through Science</h2>
+        <ul>
+            <li><strong class="color-bluish">Scientific Method:</strong> Astronomy relies on the scientific method, which means it uses evidence that can be tested, repeated, and verified. Our understanding of the universe improves as new evidence is discovered, and scientists continually refine their models and theories based on the latest data.</li>
+            <li><strong class="color-greenish">Technological Advancements:</strong> Many technologies we use today, like satellite communications and GPS, were developed thanks to astronomy.</li>
+            <li><strong class="color-yellowish">Space Exploration:</strong> Astronomy drives space exploration, leading to missions that explore planets, moons, asteroids, and beyond.</li>
+            <li><strong class="color-pinkish">Understanding Our Place in the Universe:</strong> Astronomy helps us learn about our place in the universe, fostering wonder and curiosity about how the universe works and how it came to be.</li>
+            <li><strong class="color-bluish">Predictive Power:</strong> Astronomers can predict celestial events like eclipses, comets, asteroids, and the movements of planets with great accuracy.</li>
+        </ul>
+        
+        <h2>Origins of Astronomy</h2>
+        <p>Astronomy is one of the oldest sciences. It began with ancient civilizations like the Babylonians, Greeks, and Egyptians who observed the night sky and developed calendars and navigation systems. These early astronomers made detailed observations that helped them understand the patterns and movements of celestial objects. The invention of the telescope in the early 17th century was a major breakthrough. Galileo Galilei improved the telescope and was one of the first to use it for detailed astronomical observations. With telescopes, astronomers could see further and more clearly than ever before, leading to groundbreaking discoveries such as the moons of Jupiter and the rings of Saturn. These observations <span class="color-greenish">confirmed that the same physical laws</span> that operate on Earth also <span class="color-greenish">apply throughout the universe</span>, demonstrating that physics works everywhere. These discoveries not only expanded our knowledge of the cosmos but also helped to <span class="color-yellowish">jumpstart the Scientific Revolution</span>, revealing the true nature of the world around us.</p>
+    </div>
+    
+    <div class="column">
+        <!-- Astrology Section -->
+        <h2 class="color-reddish">Astrology</h2>
+        <img src="{{ url_for('static', filename='images/Astrology.png') }}" alt="Astrology" class="image-medium">
+        <p>Astrology is a <span class="color-reddish">belief system that suggests the positions and movements of celestial bodies can influence human life and events</span>. Unlike astronomy, astrology is not based on any scientific evidence, but many people find it interesting for various reasons.</p>
+        <h2>Why Some People Believe in Astrology</h2>
+        <ul>
+            <li><strong>Psychological Comfort:</strong> Astrology can provide a sense of comfort and order in a chaotic world, offering explanations for personality traits, life events, and future possibilities.</li>
+            <li><strong>Confirmation Bias:</strong> People often remember accurate or positive predictions and forget the inaccurate ones, reinforcing their belief in astrology.</li>
+            <li><strong>Cognitive Biases:</strong> Humans naturally look for patterns and connections, even where they may not exist.</li>
+            <li><strong>Barnum Effect:</strong> Astrological descriptions are often broad and vague, allowing individuals to find personal relevance in them.</li>
+            <li><strong>Psychological Need for Meaning and Social Identity:</strong> Astrology provides a framework for understanding life's purpose and direction, fulfilling a need for belonging and meaning.</li>
+            <li><strong>Crisis and Uncertainty:</strong> During times of personal or societal crisis, people often turn to astrology for guidance and reassurance.</li>
+        </ul>
+        <h2>Origins of Astrology</h2>
+        <p>Astrology and astronomy both have ancient origins. While the term 'astrology', meaning (from the Greek words 'astron' (star) and 'logos' (study)) the study of stars, could in that sense be confused with what we understand as 'astronomy' today, it settled that the word 'astrology' refers to a belief system that the projected positions of celestial bodies influence our lives, whereas 'astronomy' refers to the scientific study of these celestial bodies and the universe.</p>
+    </div>
+</div>
+{% endblock %}

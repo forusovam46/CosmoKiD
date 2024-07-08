@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- APOD Section -->
+<h1>Astronomy Picture of the Day</h1>
+<div class="apod-container">
+    <div class="apod-content">
+        <h2>{{ apod_data.title }}</h2>
+        <p>{{ apod_data.date }}</p>
+        {% if apod_data.media_type == 'image' %}
+            <img src="{{ apod_data.url }}" alt="{{ apod_data.title }}" class="image">
+        {% elif apod_data.media_type == 'video' %}
+            <iframe src="{{ apod_data.url }}" frameborder="0" class="apod-video"></iframe>
+        {% endif %}
+        <p>{{ apod_data.explanation }}</p>
+    </div>
+    <p class="note">Enjoy NASA's picture of the day. Credit: <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">NASA APOD</a>.</p>
+</div>
+{% endblock %}

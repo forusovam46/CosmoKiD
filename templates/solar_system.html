@@ -1,8 +1,49 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>The Solar System</h1>
-    <div id="solar-system-animation">
-        <!-- Solar system animation will be added here -->
+<!-- Solar System and Milky Way Section -->
+<h1>Our Solar System and the Milky Way</h1>
+<div class="two-column-layout">
+    <div class="column">
+        <!-- Introduction to the Solar System -->
+        <p><span class="color-pinkish">Our Solar System</span> is a fascinating place. It includes the <span class="color-bluish">Sun</span>, which is a star, and everything that orbits around it like planets, moons, asteroids, and comets. The Sun's gravity holds the Solar System together and keeps everything moving in its path.</p>
+        
+        <!-- Planets in the Solar System -->
+        <h2>Planets</h2>
+        <p>There are eight main planets in our Solar System: <span class="color-greenish">Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune</span>. Each of these planets is unique in its size, composition, and distance from the Sun. For example, Earth is the only planet we know of that has life, while Jupiter is the largest planet with a storm that has been raging for centuries.</p>
+        
+        <!-- Other Objects in the Solar System -->
+        <h2>Other Objects</h2>
+        <p>Apart from the planets, our Solar System has many other interesting objects. These include dwarf planets like <span class="color-yellowish">Pluto</span>, the <span class="color-yellowish">asteroid belt</span> between Mars and Jupiter filled with rocky bodies, and the <span class="color-yellowish">Kuiper Belt</span> and <span class="color-yellowish">Oort Cloud</span> at the edge of the Solar System, which contain icy bodies and comets.</p>
+        
+        <!-- Eclipses in the Solar System -->
+        <h2>Eclipses</h2>
+        <p>An eclipse happens when one object in space moves into the shadow of another object. On Earth, we experience <span class="color-reddish">solar eclipses</span> when the Moon passes between the Earth and the Sun, blocking out the Sun’s light, and <span class="color-reddish">lunar eclipses</span> when the Earth passes between the Sun and the Moon, casting a shadow on the Moon.</p>
+        
+        <!-- Motion in the Solar System -->
+        <h2>Solar System in Motion</h2>
+        <p>Our Solar System isn't just static; it’s always moving. The planets orbit the Sun, and moons orbit the planets. But that's not all—the entire Solar System is also moving through space, orbiting the center of our galaxy, the Milky Way. This means that while the planets are moving around the Sun, the whole Solar System is making its way through the galaxy at an incredible speed.</p>
+        
+        <!-- Sizes and Distances in the Solar System -->
+        <h2>Sizes and Distances</h2>
+        <p>The sizes and distances in the Solar System can be hard to imagine. The images are not to scale. The planets are much smaller compared to the vast distances between them. For example, if the Sun were the size of a basketball, Earth would be about the size of a pea and 26 meters away!</p>
+        
+        <!-- Our Position in the Milky Way -->
+        <h2>Our Position in the Milky Way</h2>
+        <p>The <span class="color-yellowish">Milky Way</span> is a vast galaxy that contains our Solar System, along with billions of other stars, planets, and celestial objects. Our Solar System is located in one of the outer spiral arms of the Milky Way, called the Orion Arm.</p>
+        <p>In the interactive visualization below, you can zoom out to see our position within the Milky Way. Enjoy with caution as the the Milky Way appears flatter than it actually is!</p>
     </div>
+    
+    <div class="column black-background">
+        <!-- Solar System Image -->
+        <h2>The Solar System</h2>
+        <img src="{{ url_for('static', filename='images/solar_system_banner.webp') }}" alt="Solar System Banner" class="image">
+        <p class="note">Credit: <a href="https://science.nasa.gov/solar-system/" target="_blank">NASA</a>.</p>
+        
+        <!-- Interactive Solar System Visualization -->
+        <h2>Interactive Solar System</h2>
+        <iframe src="https://eyes.nasa.gov/apps/solar-system/#/home" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
+        <p class="note">Explore more at <a href="https://eyes.nasa.gov/apps/solar-system/#/home" target="_blank">NASA Eyes on the Solar System</a>.</p>
+    </div>
+</div>
 {% endblock %}
