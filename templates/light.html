@@ -21,17 +21,20 @@
         
         <!-- Spectroscopy and Photometry -->
         <h2>Spectroscopy and Photometry</h2>
-        <p><span class="color-yellowish">Spectroscop</span>y is the study of how light interacts with matter. By analyzing the spectrum of light from a star or galaxy, astronomers can determine its composition, temperature, density, mass, distance, luminosity, and relative motion. <span class="color-yellowish">Photometry</span> is the measurement of the intensity or brightness of light. It helps astronomers understand the variability and behavior of celestial objects over time.</p>
+        <p><span class="color-yellowish">Spectroscopy</span> is the study of how light interacts with matter. By analyzing the spectrum of light from a star or galaxy, astronomers can determine its composition, temperature, density, mass, distance, luminosity, and relative motion. <span class="color-yellowish">Photometry</span> is the measurement of the intensity or brightness of light. It helps astronomers understand the variability and behavior of celestial objects over time.</p>
     </div>
     
     <div class="column black-background">
         <h2>The full spectrum of light</h2>
         <!-- Electromagnetic Spectrum Image -->
         <img src="{{ url_for('static', filename='images/electromagnetic-spectrum.png') }}" alt="Electromagnetic Spectrum" class="image" style="margin-bottom: 30px;">
+        
         <!-- Light Dispersion Video 3Blue1Brown -->
         <h2>Light Dispersion through a Prism</h2>
-        <p class="note">Prism unvales the the colors of light. If you want to dive deeper into what happens in a prism, watch the full <a href="https://youtu.be/KTzGBJPuJwM?si=-5tHgY2a7rzeNCL5" target="_blank"></a>video</a> from this great educational content creator, 3Blue1Brown.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KTzGBJPuJwM?si=azVbMDLyrvUdgldd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="note">A prism unveils the colors of light. If you want to dive deeper into what happens in a prism, watch the full <a href="https://youtu.be/KTzGBJPuJwM?si=-5tHgY2a7rzeNCL5" target="_blank">video</a> from this great educational content creator, 3Blue1Brown.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/KTzGBJPuJwM?si=azVbMDLyrvUdgldd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </div>
 </div>
 {% endblock %}

@@ -172,7 +172,6 @@ nav ul li a:hover {
     overflow: hidden;
     max-width: 100%;
     background: #000;
-    margin: 20px 0;
 }
 
 .video-container iframe {
@@ -202,9 +201,26 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* Responsive Design */
+/* Mobile devices */
 @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
     .two-column-layout {
         flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .column {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .note, .column, .apod-content {
+        text-align: center;
     }
 }
